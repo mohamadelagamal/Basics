@@ -20,32 +20,32 @@ public class PrimeNumber {
         System.out.println("enter number ");
         int number = input.nextInt();
 
-//        int counter =0;
-//        for (int i =1; i<=number;i++){
-//            // 12%i -> 0
-//            // 13%i->1
-//            if (number%i==0){
-//                counter++;
-//            }
-//        }
-//        if (counter==2){
-//            System.out.println("This number is Prime");
-//        }else {
-//            System.out.println("this number is not Prime");
-//        }
-
-        // 6  1.........6
-        boolean isPrime = true;
-        for (int i=2; i<number; i++){
+        int counter =0;
+        for (int i =1; i<=number;i++){
+            // 12%i -> 0
+            // 13%i->1
             if (number%i==0){
-                isPrime = false;
-                break;
+                counter++;
             }
         }
-        if (isPrime==true){
-            System.out.println("prime");
+        if (counter==2){
+            System.out.println("This number is Prime");
         }else {
-            System.out.println("not Prime");
+            System.out.println("this number is not Prime");
         }
+
+//        // 6  1.........6
+//        boolean isPrime = true;
+//        for (int i=2; i<number; i++){
+//            if (number%i==0){
+//                isPrime = false;
+//                break;
+//            }
+//        }
+//        if (isPrime==true){
+//            System.out.println("prime");
+//        }else {
+//            System.out.println("not Prime");
+//        }
     }
 }
