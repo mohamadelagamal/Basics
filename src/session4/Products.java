@@ -1,10 +1,14 @@
 package session4;
 
 public class Products {
-    
-    int id;
-    String name;
-    double price;
+
+    // public , private
+    private int id;
+    private String name;
+    private double price;
+
+    // add name of company
+     static String marketName;
 
     // function -> type , name , parameters
     void printItems(){
@@ -28,5 +32,31 @@ public class Products {
 
     }
 
-    
+    // return data from private id [ Product ] to Oop class
+
+    public int getId() {
+        return id;
+    }
+
+
+    // get id from Oop class and set it -> id
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+            this.price = price;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

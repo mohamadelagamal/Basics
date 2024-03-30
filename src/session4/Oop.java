@@ -23,9 +23,37 @@ public class Oop {
         String name = "pepsi";
         double price = 20.0;
 
-        Products products= new Products(id,name,price);
+   //     Products products= new Products(id,name,price);
 
-       products.printItems();
+     //  products.printItems();
+//       products.id = 10;
+//        System.out.println(products.id);
+//
+//        products.setId(100);
+//        System.out.println( "this is id  "+products.getId());
+//        // update name
+//        products.setName("Cola");
+//        System.out.println("this is name  "+products.getName());
+//        // update price
+//        products.setPrice(0);
+//        System.out.println("this is price  "+ products.getPrice());
+
+
+        // static
+        Products productsOne = new Products();
+        productsOne.marketName = "Carrefour";
+        System.out.println(productsOne.marketName);
+
+
+        Products productsTwo = new Products();
+
+        System.out.println(productsTwo.marketName);
+
+
+
+
+
+
 
     }
     // to create function
