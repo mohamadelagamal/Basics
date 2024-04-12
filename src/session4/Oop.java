@@ -23,7 +23,7 @@ public class Oop {
         String name = "pepsi";
         double price = 20.0;
 
-   //     Products products= new Products(id,name,price);
+      Products products= new Products(id,name,price);
 
      //  products.printItems();
 //       products.id = 10;
